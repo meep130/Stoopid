@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.theamae.stoopid.com.example.theamae.stoopid.BallGameActivity">
+
+    <TextView
+        android:id="@+id/best_textView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="BEST"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="CURRENT"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/home_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score_textView"
+        android:layout_width="86dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="0"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/home_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time_textView"
+        android:layout_width="65dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="60"
+        android:textColor="@color/blue"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/best_textView"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/score_textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="96dp"
+        android:text="PRESS THE"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/statement_textView"
+        android:layout_width="264dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="140dp"
+        android:text="BLUE DOTS"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914">
+
+        <ImageButton
+            android:id="@+id/yellowdot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="48dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot6"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot7"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot3"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot1"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot8"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot4"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot2"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot9"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot5"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot3"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot4"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot11"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot7"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot1"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot12"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot8"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot6"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot2"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot13"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot9"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot7"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot3"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot14"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot10"
+            app:layout_constraintHorizontal_bias="0.769"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot8"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot4"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot9"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot5"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot16"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot6"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot17"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot13"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot11"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot7"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot18"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot14"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot12"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot8"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot19"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot15"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot13"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot9"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/yellowdot20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot14"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot10"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot11"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot18"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot16"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot12"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot19"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot17"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot13"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot19"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot20"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot18"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot14"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot19"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot15"/>
+
+        <ImageButton
+            android:id="@+id/yellowdot21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot16" />
+
+        <ImageButton
+            android:id="@+id/yellowdot22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot23"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot21"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot17" />
+
+        <ImageButton
+            android:id="@+id/yellowdot23"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot24"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot22"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot18" />
+
+        <ImageButton
+            android:id="@+id/yellowdot24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot25"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot23"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot19" />
+
+        <ImageButton
+            android:id="@+id/yellowdot25"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot24"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot20" />
+
+        <ImageButton
+            android:id="@+id/yellowdot26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot27"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot21"
+            app:layout_constraintVertical_bias="0.057" />
+
+        <ImageButton
+            android:id="@+id/yellowdot27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot28"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot26"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot22"
+            app:layout_constraintVertical_bias="0.057" />
+
+        <ImageButton
+            android:id="@+id/yellowdot28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot29"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot27"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot23"
+            app:layout_constraintVertical_bias="0.057" />
+
+        <ImageButton
+            android:id="@+id/yellowdot29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/yellowdot30"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot28"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot24"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/yellowdot30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/yellowdot29"
+            app:layout_constraintTop_toBottomOf="@+id/yellowdot25"
+            app:layout_constraintVertical_bias="0.148" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
